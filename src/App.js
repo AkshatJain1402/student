@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+// import { app } from "./Firebase.js";
+import Navbar from "./Navbar";
+import Home from "./Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WelcomeScreen from "./WelcomeScreen";
+import DataTest from "./DataTest";
+import UIDProfilePage from "./UIDProfilePage";
+
+import UIDContextProvider from "./ContextProvider";
+import DummyDataTest from "./DummyDataTest";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UIDContextProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/WelcomeScreen" element={<WelcomeScreen />}></Route>
+
+          <Route path="/UIDProfilePage" element={<UIDProfilePage />}></Route>
+          {/* <Route path="/Maps" element={<Maps></Maps>}></Route> */}
+
+          {/* <Route
+            path="/UIDProfilePage/*"
+            element={<UIDProfilePage></UIDProfilePage>}
+          ></Route> */}
+          <Route
+            path="/DummyDataTest"
+            element={<DummyDataTest></DummyDataTest>}
+          />
+        </Routes>
+      </Router>
+    </UIDContextProvider>
   );
 }
 

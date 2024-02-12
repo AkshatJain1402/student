@@ -1,0 +1,145 @@
+.homeNavbar {
+  width: 85%;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  border-radius: 20px;
+  padding: 15px;
+  padding-left: 50px;
+  box-shadow: 10px 20px 40px gainsboro;
+  background-color: rgba(37, 36, 34, 0.975);
+  backface-visibility: 10%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.homeContainer {
+  width: 87%;
+
+  position: relative;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 10px 20px 40px #3e3b3c53;
+  background: linear-gradient(
+    7deg,
+    rgba(156, 212, 166, 0.464) 30%,
+    rgba(255, 255, 255, 0.582) 80%
+  );
+
+  backface-visibility: 10%;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.searchText {
+  font-size: 180%;
+  font-weight: lighter;
+
+  background: none;
+  border-radius: 0;
+  border-style: none;
+  margin-bottom: 40px;
+}
+.searchText:focus {
+  border-style: none;
+  border-width: 0;
+  outline: none;
+}
+.navbarText {
+  text-decoration: none;
+  font-size: 150%;
+  color: black;
+  font-weight: lighter;
+}
+
+.UIDHolder {
+  width: 94%;
+  height: 60vh;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+  border-radius: 35px;
+  padding-top: 35px;
+  padding-left: 50px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.621);
+  background-color: transparent;
+
+  backface-visibility: 10%;
+  margin-top: 20px;
+}
+.UIDS {
+  font-size: larger;
+
+  display: flex;
+  margin: 10px;
+  padding: 0px;
+  height: 26px;
+  width: 160px;
+  border-radius: 20px;
+  justify-self: center;
+  color: black;
+}
+.UIDS::before {
+  content: ".";
+  font-weight: 1000;
+  padding: 8px;
+}
+
+.UIDS:hover {
+  cursor: pointer;
+  color: burlywood;
+  box-shadow: 4px 2px 4px rgba(28, 28, 28, 0.304);
+}
+.footer {
+  width: 100%;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 5px;
+  box-shadow: 0px 0px 30px rgba(199, 169, 179, 0.621);
+  background: linear-gradient(
+    to top,
+    rgba(163, 207, 183, 0.249) 30%,
+    rgba(255, 255, 255, 0.903) 80%
+  );
+
+  backface-visibility: 10%;
+  margin-top: 20px;
+}
+.iconHolder {
+  width: 70%;
+  height: 42px;
+
+  background: linear-gradient(
+    to top,
+    rgba(207, 163, 178, 0) 30%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(61, 59, 60, 0.823);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  backface-visibility: 10%;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.navbarLinks {
+  color: rgba(235, 95, 40);
+  font-weight: bold;
+  font-size: large;
+}

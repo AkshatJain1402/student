@@ -1,0 +1,79 @@
+.otherNavigationBarBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+
+.navbar {
+  width: 85%;
+  height: 60px;
+  position: relative;
+  display: flex;
+
+  border-radius: 15px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+  box-shadow: 10px 20px 40px gainsboro;
+  /* background: linear-gradient(
+    to right,
+    rgba(37, 36, 34, 0.685) 10%,
+    rgba(204, 197, 185, 0.249) 80%,
+    rgba(235, 95, 40, 0.538)
+  ); */
+  background-color: rgba(37, 36, 34, 0.975);
+
+  backface-visibility: 10%;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.mainContainter {
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+
+  flex-direction: row;
+  margin: 50px;
+}
+.boardingInfoContainer {
+  width: 60%;
+  background: linear-gradient(
+    7deg,
+    rgba(156, 212, 166, 0.464) 30%,
+    rgba(255, 255, 255, 0.582) 80%
+  );
+  margin-right: 40px;
+  border-radius: 20px;
+  padding: 50px;
+  overflow-y: scroll;
+}
+.studentProfileContainer {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  width: 25%;
+  background: linear-gradient(
+    rgba(149, 203, 169, 0.464) 30%,
+    rgba(255, 255, 255, 0.582) 80%
+  );
+}
+.studentImage {
+  margin: 50px;
+
+  height: 150px;
+  width: 160px;
+  align-self: center;
+  border-radius: 100%;
+}
+.boardingTime {
+  font-size: larger;
+}
+.navbarLinks {
+  color: rgba(235, 95, 40);
+  font-weight: bold;
+  font-size: larger;
+}
